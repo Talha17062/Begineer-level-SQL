@@ -1,0 +1,8 @@
+                                                          -- How the values in a respective table are inserted -- 
+
+
+INSERT INTO crystal
+VALUES ("1","diamond","Talha","Lahore"),
+      ("2","roobi","Talha","Lahore"),
+      ("3","coal","Saad","Multan"),
+      ("4","zamurd","Saad","Multan");
