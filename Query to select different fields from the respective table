@@ -1,0 +1,1 @@
+SELECT crystal_id, crystal_name FROM cystal;  -- This query will return the only two columns name "crystal_id and crystal_name" from the Table crystal. However, you can similarly access the other columns
