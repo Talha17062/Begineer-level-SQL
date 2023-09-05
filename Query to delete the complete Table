@@ -1,0 +1,2 @@
+ DROP TABLE occupation;  -- If you have decided to delete the whole table from the database, you can do this with the help of "DROP" clause
+   
