@@ -1,0 +1,59 @@
+                          --  Begineer level concepts to design the database and Schemas using MySQL Workbench 8.0 CE --
+ USE altrium;
+CREATE TABLE crystal
+(
+crystal_id int NOT NULL primary key,
+crystal_name varchar(50) NOT NULL,
+crystal_maker varchar(50) NOT NULL,
+crystal_maker_city varchar(50) NOT NULL 
+); 
+
+INSERT INTO crystal
+VALUES ("1","diamond","Talha","Lahore"),
+      ("2","roobi","Talha","Lahore"),
+      ("3","coal","Saad","Multan"),
+      ("4","zamurd","Saad","Multan");
+      
+	SELECT * FROM crystal;     -- Query to access all the attributes (column) from the table 
+    
+    SELECT crystal_id, crystal_name FROM crystal;  -- This query will return the only two columns name "crystal_id and crystal_name" from the Table crystal. However, you can similarly access the other columns
+                          
+SELECT crystal_name
+FROM crystal              -- this query will return the crystal_name whose id would be 3 and this can be done using "WHERE" clause
+WHERE crystal_id = "3";
+
+
+SELECT crystal_name  
+FROM crystal                      -- this query would return the crystal_name prepared by cystal_maker using "WHERE" clause.
+WHERE crystal_maker = "Talha";                
+
+   -- With the assistance of "WHERE" clause, we can retrieve the desired information from the immense data
+   
+   SELECT * FROM crystal;
+   
+   UPDATE crystal
+   SET crystal_name = "diamond"  -- "UPDATE" clause is used to replace the attribute information with the desired one. Lets suppose, if you want to replace the name of the crystal_maker due to the spelling mistake then this query can come in handy. It is to be make sure that "WHERE" clause must be used while using the "UPDATE" clause.
+   WHERE crystal_id = "4";      -- In this given query, we changed the crystal_name with "diamond" where crystal_id was 4.
+   
+
+   
+   
+   ALTER TABLE crystal                        -- ALTER query is one of the interesting query in MySQL as you can add the attribute whenever you want. All you have to do is to specify the attribute name and its data type 
+   ADD column maker_salary int8 NOT NULL;  
+
+   
+   
+   UPDATE crystal
+   SET maker_salary = "40000" 
+   WHERE crystal_id = "4";
+   
+   DELETE FROM crystal          -- By using "DELETE" clause you can delte the record with the help of "WHERE" clause but remember this will completely eradicate the whole row.
+   WHERE crystal_id = "1";
+   
+   ALTER TABLE crystal        -- Another use of "ALTER" clause is to delte the desired attribute (column)
+   DROP COLUMN maker_salary;
+   
+   USE talha;
+   DROP TABLE occupation;  -- If you have decided to delete the whole table from the database, you can do this with the help of "DROP" clause
+   
+   
