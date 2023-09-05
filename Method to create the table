@@ -1,0 +1,9 @@
+                          --  Code to create relational Schemas (TABLE) --
+ USE altrium;
+CREATE TABLE crystal
+(
+crystal_id int NOT NULL primary key,
+crystal_name varchar(50) NOT NULL,
+crystal_maker varchar(50) NOT NULL,
+crystal_maker_city varchar(50) NOT NULL 
+);
