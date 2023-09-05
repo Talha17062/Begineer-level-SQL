@@ -1,0 +1,7 @@
+                          --  How Database is created in MySQL --
+                          
+                          
+
+CREATE DATABASE IF NOT EXISTS Altrium ;  -- this query would be written if there is a possibility of existing the same database 
+
+CREATE DATABASE Altrium;  -- this query would make the database having name Altrium
