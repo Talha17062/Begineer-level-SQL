@@ -1,0 +1,3 @@
+SELECT * FROM crystal;     -- Query to access all the attributes (column) from the table 
+
+-- This query will present you all the fields (Columns) and records (rows) from the respective Table -- 
