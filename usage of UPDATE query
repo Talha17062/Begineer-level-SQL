@@ -1,0 +1,3 @@
+ UPDATE crystal
+   SET crystal_name = "diamond"  -- "UPDATE" clause is used to replace the attribute information with the desired one. Lets suppose, if you want to replace the name of the crystal_maker due to the spelling mistake then this query can come in handy. It is to be make sure that "WHERE" clause must be used while using the "UPDATE" clause.
+   WHERE crystal_id = "4";      -- In this given query, we changed the crystal_name with "diamond" where crystal_id was 4.
