@@ -1,0 +1,10 @@
+SELECT crystal_name
+FROM crystal              -- this query will return the crystal_name whose id would be 3 and this can be done using "WHERE" clause
+WHERE crystal_id = "3";
+
+
+SELECT crystal_name  
+FROM crystal                      -- this query would return the crystal_name prepared by cystal_maker using "WHERE" clause.
+WHERE crystal_maker = "Talha";                
+
+   -- With the assistance of "WHERE" clause, we can retrieve the desired information from the immense data
