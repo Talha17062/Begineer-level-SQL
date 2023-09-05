@@ -1,0 +1,2 @@
+  DELETE FROM crystal          -- By using "DELETE" clause you can delte the record with the help of "WHERE" clause but remember this will completely eradicate the whole row --
+   WHERE crystal_id = "1";
