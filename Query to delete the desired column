@@ -1,0 +1,2 @@
+  ALTER TABLE crystal        -- Another use of "ALTER" clause is to delte the desired attribute (column) --
+   DROP COLUMN maker_salary;
