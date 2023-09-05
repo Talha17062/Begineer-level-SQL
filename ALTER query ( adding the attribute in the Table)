@@ -1,0 +1,2 @@
+ ALTER TABLE crystal                        -- ALTER query is one of the interesting query in MySQL as you can add the attribute whenever you want. All you have to do is to specify the attribute name and its data type 
+   ADD column maker_salary int8 NOT NULL;  
